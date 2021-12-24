@@ -3,7 +3,9 @@
         "*.dart": "dart",
         "*.asm": "asm-collection",
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "istream": "cpp",
+        "string": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }
