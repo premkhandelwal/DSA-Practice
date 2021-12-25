@@ -5,7 +5,12 @@
         "iostream": "cpp",
         "ostream": "cpp",
         "istream": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "exception": "cpp",
+        "memory": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp",
+        "xstring": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }
