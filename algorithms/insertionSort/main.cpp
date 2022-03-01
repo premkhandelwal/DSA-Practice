@@ -19,6 +19,60 @@ void swap(int *a, int *b)
 
 void insertionSort(int arr[], int n)
 {
+    /* 
+        arr = [5, 3, 2. 6, 8, 4]
+
+        for i = 1:
+            key = arr[i] = arr[1] = 3
+            j = i - 1 = 1- 1 = 0
+            while (j >= 0 && arr[j] > key) ==> 
+                Loop 1:
+                    while(0>=0 && 5 >3)
+                    {
+                        arr[j+1] = arr[j] ==> arr[1] = arr[0] ==> arr = [3, 3, 2, 6, 8, 4]
+                        j-- ==> j = -1;
+                    }
+                Loop 2:
+                    while(-1>=0) ==> Condition becomes false ;   ==> arr = [3, 3, 2, 6, 8, 4]    
+            END OF WHILE LOOP
+
+            arr = [3, 3, 2, 6, 8, 4]
+            j = -1; key = 3;;
+            arr[j+1] = key 
+            arr[0] =  3
+            arr = [3, | 5, 2, 6, 8, 4]
+
+
+        for i = 2:
+            arr = [3, 5, 2. 6, 8, 4]
+            key = arr[i] = arr[2] = 5
+            j = i - 1 = 2- 1 = 1
+            while (j >= 0 && arr[j] > key) ==> 
+                Loop 1:
+                    while(1>=0 && 5 >5) ==> Condition becomes false as 5 == 5; arr = [3, 5, 2, 6, 8, 4]        
+            END OF WHILE LOOP
+
+            arr = [3, 5, 2, 6, 8, 4]    
+            j = 1; key = 5;
+            arr[j+1] = key 
+            arr[1] =  5
+            arr = [3, 5 | 2, 6, 8, 4]
+
+        for i = 3:
+            arr = [3, 5, 2. 6, 8, 4]
+            key = arr[i] = arr[3] = 2
+            j = i - 1 = 3- 1 = 2
+            while (j >= 0 && arr[j] > key) ==> 
+                Loop 1:
+                    while(0>=0 && 5 >3)
+                    {
+                        arr[j+1] = arr[j] ==> arr[1] = arr[0] ==> arr = [3, 3, 2, 6, 8, 4]
+                        j-- ==> j = -1;
+                    }
+                Loop 2:
+                    while(-1>=0) ==> Condition becomes false ;   ==> arr = [3, 3, 2, 6, 8, 4]        
+            END OF WHILE LOOP
+     */
     int key, j;
     for (int i = 1; i <= n - 1; i++) // Loop for passes
     {
