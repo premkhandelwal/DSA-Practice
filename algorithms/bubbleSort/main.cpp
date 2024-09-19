@@ -20,11 +20,11 @@ void swap(int* a, int* b)
 void bubbleSort(int arr[], int n)
 {
     int isSorted = 0;
-    for (int i = 0; i < n - 1; i++) // For number of pass - -1 because last element will by default be at correct position
+    for (int i = n - 1; i >= 1; i--) // For number of pass - -1 because last element will by default be at correct position
     {
         cout<< "Working on pass number: " << i <<endl;
         isSorted = 1; // A) Set isSorted at beginning of each PASS
-        for (int j = 0; j < n - i - 1; j++) // For comparison in each pass
+        for (int j = 0; j < i; j++) // For comparison in each pass
         {
             if (arr[j] > arr[j + 1])
             {
